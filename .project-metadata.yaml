@@ -1,0 +1,12 @@
+name: Explaining Models with LIME and SHAP
+description: Demonstrates how to explain ML models built on a customer churn dataset using LIME and SHAP.
+author: Cloudera Inc.
+specification_version: 1.0
+prototype_version: 2.0
+date: "2022-04-27"
+
+
+runtimes:
+  - editor: JupyterLab
+    kernel: Python 3.9
+    edition: Standard
