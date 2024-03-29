@@ -10,3 +10,22 @@ runtimes:
   - editor: JupyterLab
     kernel: Python 3.9
     edition: Standard
+
+tasks:
+  - type: create_job
+    name: Install Dependencies
+    entity_label: install_dependencies
+    script: script/install_dependencies.py
+    arguments: None
+    cpu: 1
+    memory: 2
+    short_summary: Create job to install project dependencies.
+    environment:
+      TASK_TYPE: CREATE/RUN_JOB
+
+  - type: run_job
+    entity_label: install_dependencies
+    short_summary: Running install dependencies job.
+    long_summary: Running the job to install dependencies.  Note that this requires at least 2GB of memory, and takes several minutes.
+    
+    
